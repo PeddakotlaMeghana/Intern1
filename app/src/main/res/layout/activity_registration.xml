@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="45dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:background="#F5F5F5"
+    tools:context="com.example.meghanapeddakotla.intern1.RegistrationActivity">
+
+    <EditText
+        android:id="@+id/et_fname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="First Name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_lname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/et_fname"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="Last Name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/et_lname"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="Email"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/et_email"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/et_conform"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/et_pass"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10dp"
+        android:hint="Conform Password"
+        android:inputType="textPassword"/>
+
+    <ImageButton
+        android:id="@+id/imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/et_conform"
+        android:background="@mipmap/ic_launcher_foreground"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="125dp"
+        android:layout_below="@id/imageview"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/tvtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/tv_name"
+        android:text="Please upload photo"/>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@+id/tvtext"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="Login"
+        android:textColor="#ffff"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtext"
+        android:layout_toRightOf="@id/login_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button"
+        android:text="Register"
+        android:textColor="#ffff"
+        android:textSize="18sp"/>
+</RelativeLayout>

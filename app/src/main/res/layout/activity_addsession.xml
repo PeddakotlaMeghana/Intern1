@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meghanapeddakotla.intern1.AddsessionActivity">
+
+    <Spinner
+        android:id="@+id/department_spinner"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/drop_down"/>
+
+    <Spinner
+        android:id="@+id/sem_spinner"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/department_spinner"
+        android:background="@drawable/drop_down"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/department_spinner"
+        android:layout_alignStart="@+id/department_spinner"
+        android:layout_alignEnd="@+id/sem_spinner"
+        android:layout_alignRight="@+id/sem_spinner"
+        android:layout_below="@+id/department_spinner"
+        android:layout_marginTop="30dp"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Please Select the Department and Semester"
+            android:textSize="25sp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/department_spinner"
+        android:layout_alignStart="@+id/department_spinner"
+        android:layout_alignEnd="@+id/sem_spinner"
+        android:layout_alignRight="@+id/sem_spinner"
+        android:layout_below="@+id/frame"
+        android:layout_marginTop="30dp"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/tv_topic"
+            android:inputType="text"
+            android:backgroundTint="#000"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#f5F5F5"/>
+
+        <Button
+            android:id="@+id/pick_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="166dp"
+            android:layout_marginTop="80dp"
+            android:text="Pick Date"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginTop="130dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="#f5F5F5"/>
+
+        <Button
+            android:id="@+id/pick_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="166dp"
+            android:layout_marginTop="130dp"
+            android:text="Pick Time"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_alignStart="@id/department_spinner"
+        android:layout_alignLeft="@id/department_spinner"
+        android:layout_alignRight="@id/sem_spinner"
+        android:layout_alignEnd="@id/sem_spinner"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/frame2"
+        android:text="Save"
+        android:textColor="#ffff"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
